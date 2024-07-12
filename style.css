@@ -1,0 +1,147 @@
+body{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: url(/Ipad\ Wallpaper\ Hd\ Minimalist\ Blue.jpg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.container{
+    width: 400px;
+    height: auto;
+    padding: 20px;
+    border: 2px solid rgb(255, 255, 255);
+    background-color: transparent;
+    border-radius: 20px;
+    backdrop-filter: blur(15px);
+}
+
+.container h1{
+    text-align: center;
+    color: white;
+}
+
+.input-container, .choices{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.input-container .todoinput{
+    border-radius: 20px;
+    padding: 8px 25px;
+    margin: 10px;
+    border: 2px solid white;
+    background-color: transparent;
+    caret-color: white;
+}
+
+.todoinput:focus{
+    border: 2px solid white;
+    outline: none;
+}
+
+.todoinput::placeholder{
+    color: rgb(187, 186, 186);
+    padding-left: 3px;
+    font-size: 15px;
+}
+
+
+.complete, .incomplete, .delete{
+    border-radius: 20px;
+    padding: 5px 18px ;
+    margin: 8px;
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+}
+
+.complete:focus{
+    background-color: white;
+    color: #1f0722a1;
+}
+.incomplete:focus{
+    background-color: white;
+    color:#1f0722a1;
+}
+.delete:hover{
+    background-color: white;
+    color: #1f0722a1;
+}
+
+.addtask {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    border: none;
+    background-color: #5C4E68;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+
+.addtask i {
+    font-size: 32px; 
+    color: inherit; 
+}
+
+.tasks {
+    list-style-type: none;
+    padding: 0;
+}
+
+.task {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    border: none;
+    background-color: #775d8d;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    max-width: calc(100% - 20px); /* Adjust as needed */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.task .tick-button,
+.task .delete-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    color: #ffffff;
+}
+
+.task .delete-button{
+    float: right;
+}
+
+.task .tick-button:hover,
+.task .delete-button:hover {
+    color: #333;
+}
+
+.task .task-text {
+    flex: 1; 
+    margin: 0 10px;
+    overflow: hidden; 
+    text-overflow: ellipsis;
+}
+
+.task.hidden {
+    display: none; 
+}
+
